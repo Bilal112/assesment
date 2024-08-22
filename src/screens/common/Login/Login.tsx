@@ -73,7 +73,7 @@ const Login = () => {
     dispatch(addUser(data));
   };
   const onError = error => {
-    Alert.alert('Login Failed');
+    Alert.alert('Login Failed',error);
   };
   // OnSubmit handler
   const onSubmit = (data: {email: string; password: string}) => {
