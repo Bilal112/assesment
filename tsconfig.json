@@ -1,3 +1,34 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@components/*": [
+        "src/shared/components/*"
+      ],
+      "@services/*": [
+        "src/shared/services/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@actions/*": [
+        "src/redux/actions/*"
+      ],
+      "@i18n/*": [
+        "src/assets/localization/*"
+      ]
+    },
+    "strict": true,
+    "noImplicitAny": false,
+  }
 }
