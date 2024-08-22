@@ -38,7 +38,7 @@ const Login = () => {
     control,
     handleSubmit,
     formState: {errors},
-  } = useForm({
+  }:any = useForm({
     resolver: yupResolver(loginSchema),
     defaultValues: {
       email: 'demo@harvestapp.com',
